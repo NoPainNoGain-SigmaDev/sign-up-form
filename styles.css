@@ -175,4 +175,5 @@ button{
    font-size: 1.6rem;
    background-color: var(--button-bg-color);
    margin-top: 2rem;
+   cursor: pointer;
 }
