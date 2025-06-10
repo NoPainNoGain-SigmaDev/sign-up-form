@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="left-side">
+      <div class="title-container">
+        <img class="logo-img" />
+        <h1>TITLE</h1>
+      </div>
+      <div class="credits">
+        <caption>
+          Photo by
+          <a href="https://unsplash.com/es/@shegiva" target="_blank"
+            >Grigorii Shcheglov</a
+          >
+          on
+          <a
+            href="https://unsplash.com/es/fotos/los-barcos-atracan-en-un-hermoso-pueblo-costero-YtULKNJ2BSM"
+            target="_blank"
+            >Unsplash</a
+          >
+        </caption>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="message">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.<br/>Sign up <dfn>now</dfn>
+          to get started.
+        </p>
+        <p>
+          You <dfn>know</dfn> you want to.
+        </p>
+      </div>
+      <form>
+        <div class="form-fields">
+          <h2>Let's do this!</h2>
+          <fieldset class="form-name">
+            <label for="first-name">FIRST NAME</label>
+            <input id="first-name" type="text" required />
+            <label for="last-name">LAST NAME</label>
+            <input id="last-name" type="text" required />
+          </fieldset>
+          <fieldset class="form-contact">
+            <label for="email">EMAIL</label>
+            <input id="email" type="email" required />
+            <label for="phone-number">PHONE NUMBER</label>
+            <input id="phone-number" type="number" required />
+          </fieldset>
+          <fieldset class="form-password">
+            <label for="password">PASSWORD</label>
+            <input id="password" type="password" required />
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input id="confirm-password" type="password" required />
+          </fieldset>
+        </div>
+        <button type="submit">Create Account</button>
+        <caption>
+          Already have an account?
+          <a href="https://unsplash.com/" target="_blank">Log in</a>
+        </caption>
+      </form>
+    </div>
+  </body>
+</html>
