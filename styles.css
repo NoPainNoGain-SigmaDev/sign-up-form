@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --left-font-color: #fff;
+  --right-bg-color: #f9fafc;
+  --form-bg-color: #fff;
+  --input-border: #e5e7eb;
+  --input-focus: blue;
+  --input-invalid: red;
+  --button-bg-color: #D96C4E;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:not(.right-side a) {
+  text-decoration: underline;
+  color: var(--left-font-color);
+}
+
+.left-side {
+  width: 35%;
+  color: var(--left-font-color);
+  background-image: url(./assets/img/background.jpg);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container {
+  margin-top: 30%;
+  background-color: #0000005f;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-container h1 {
+  text-align: center;
+  font-size: 8rem;
+}
+.credits {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.right-side {
+  width: 70%;
+
+  font-size: 2rem;
+  background-color: var(--right-bg-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.message {
+  height: 30%;
+  width: 75%;
+  font-weight: 500;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 6rem;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+form {
+  height: 70%;
+}
+
+.form-fields {
+  padding: 4rem 0 2rem 6rem;
+  background-color: var(--form-bg-color);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  margin: 2rem 0 2rem 0;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-submit {
+  padding-left: 6rem;
+}
+
+input {
+  display: block;
+  width: 260px;
+  height: 3rem;
+  padding-left: 0.5rem;
+  font-size: 1.7rem;
+  border: 2px solid var(--input-border);
+}
+input:focus {
+  outline: 2px solid var(--input-focus);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+input:invalid:focus{
+     outline: 2px solid var(--button-bg-color);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  font-weight: 600;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+
+.form-submit{
+    margin-top: 2rem;
+
+}
+
+.form-submit p{
+    font-size: 1.8rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.form-submit a{
+    color:var(--button-bg-color);
+}
+
+button{
+   width: 170px;
+   height: 4rem; 
+   border: none;
+   border-radius: 10px;
+   color: #fff;
+   font-weight: 600;
+   font-size: 1.6rem;
+   background-color: var(--button-bg-color);
+   margin-top: 2rem;
+}
